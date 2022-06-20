@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./app/css/base.css">
+    <link rel="stylesheet" href="./app/css/layout.css">
+    <link rel="stylesheet" href="./app/css/component.css">
+    <title>Landing Pgitage - Shirtstars</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <img src="./app/image/image-logo.png" alt="logo" class="navbar__logo">
+        <button class="fas fa-bars" id="navbar__btnOpen"></button>
+        <button class="fas fa-x" id="navbar__btnClose"></button>
+         <ul class="navbar__nav">
+             <li><a href="#" class="navbar__link">Ir para loja</a></li>
+             <li><a href="#scroll-about" class="navbar__link">Quem Somos</a></li>
+             <li><a href="#scroll-contact" class="navbar__link">Contato</a></li>
+         </ul>
+    </header>
+    <!-- Main -->
+    <main class="main">
+        <!-- Section - Title and Subtitle -->
+        <section class="main__sct-text">
+            <h1 class="main__title">As Melhores camisas do brasil com preços imperdiveís.</h1>
+            <h3 class="main__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, veniam. Quam fugiat voluptas consequatur veritatis voluptatem beatae distinctio ducimus, voluptates sunt quibusdam maiores nulla sint doloremque, magnam tempore est commodi.</h3>
+        </section>
+        <!-- Section - Cards -->
+        <section class="main__sct-card" >
+            <div class="main__card">
+                <img src="./app/image/shirt-5.jpg" alt="shirt" class="main__card-image">
+                <button class="main__card-btn">Comprar</button>
+            </div>
+            <div class="main__card">
+                <img src="./app/image/shirt-2.jpg" alt="shirt" class="main__card-image">
+                <button class="main__card-btn">Comprar</button>
+            </div>
+            <div class="main__card">
+                <img src="./app/image/shirt-3.jpg" alt="shirt" class="main__card-image">
+                <button class="main__card-btn">Comprar</button>
+            </div>
+            <div class="main__card">
+                <img src="./app/image/shirt-4.jpg" alt="shirt" class="main__card-image">
+                <button class="main__card-btn">Comprar</button>
+            </div>
+        </section>
+        <!-- Section - About -->
+        <section class="main__sct-about" id="scroll-about">
+            <h4 class="main__about-title">Quem Somos</h4>
+            <p class="main__about-paragraph">
+                &emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio mollitia corporis delectus itaque? Deleniti optio fuga repudiandae blanditiis accusantium laboriosam corporis molestiae minima. Voluptatibus quisquam omnis voluptatem provident mollitia
+                olor sit amet consectetur adipisicing elit. Optio nam doloribus quo consequatur ut, adipisci mollitia, velit nostrum sint placeat eius quisquam culpa! Asperiores, dolore! Hic deserunt sint natu.
+            </p>
+            <p class="main__about-paragraph">
+                &emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio mollitia corporis delectus itaque? Deleniti optio fuga repudiandae blanditiis accusantium laboriosam corporis molestiae minima. Voluptatibus quisquam omnis voluptatem provident mollitia
+                olor sit amet consectetur adipisicing elit. Optio nam doloribus quo consequatur ut, adipisci mollitia, velit nostrum sint placeat eius quisquam culpa! Asperiores, dolore! Hic deserunt sint.
+            </p>
+        </section>
+        <!-- Section - Lead -->
+        <section class="main__sct-lead">
+            <h4 class="main__lead-title">
+                Receba as melhores ofertas dos nossos produtos atraves de seu contato.
+                As suas informações estaram seguros na nossa empresa.
+            </h4>
+                <!-- Form -->
+                <form class="main__lead-form">
+                    <fieldset class="main__lead-fs">
+                         <label for="" class="main__lead-label">Name</label>
+                        <input type="text" class="main__lead-input">
+                    </fieldset>
+                    <fieldset class="main__lead-fs">
+                        <label for="" class="main__lead-label">E-mail</label>
+                       <input type="email" class="main__lead-input">
+                   </fieldset>
+                   <button class="main__lead-btn" type="submit">Inscrever-se</button>         
+                </form>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer" id="scroll-contact">
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-whatsapp"></a>
+    </footer>
+   
+
+   
+    <script src="./app/js/script.js"></script>
+</body>
+</html>

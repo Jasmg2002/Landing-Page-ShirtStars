@@ -1,0 +1,234 @@
+@import url('./variables.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+/*========================== Header =============================*/
+/* Logo */
+.navbar__logo {
+    width: 200x;
+    height: 55px;
+    margin-left: 90px;
+}
+/* Buttons - Close an Open */
+#navbar__btnOpen {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.875rem;
+    display: none;
+    cursor: pointer;
+}
+#navbar__btnClose {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    font-size: 1.625rem;
+    display: none;
+    cursor: pointer;
+}
+/* Links */
+.navbar__link {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: 300ms;
+}
+.navbar__link:hover {
+    color: rgb(184, 184, 184);
+}
+
+/* ============================= Main ============================= */
+.main__title {
+    font-size: 2.8125rem;
+    padding: 13px 0;
+}
+.main__subtitle {
+    font-size: 1.25rem;
+}
+.main__card {
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 2px black;
+    margin: 70px 70px;
+}
+.main__card-image {
+    max-height: 16.666666666666668vw;
+    max-width: 16.666666666666668vw;
+    min-width: 220px;
+    min-height: 220px;
+    display: block;
+    padding: 30px;
+    transition-duration: 200ms;
+}
+.main__card-image:hover {
+    transform: rotateZ(5deg);
+    transition-duration: 200ms;
+}
+.main__card-btn {
+    font-size: 20px;
+    padding: 10px 30px;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition-duration: 200ms;
+}
+.main__card-btn:hover {
+    transform: rotateZ(-5deg);
+    transition-duration: 200ms;
+}
+/* About */
+.main__about-title {
+    font-size: 2.5rem;
+    padding:20px 70px;
+}
+.main__about-paragraph {
+    font-size: 1.25rem;
+    padding: 5px 70px;
+    margin-bottom: 20px;
+}
+/* Lead */
+.main__lead-title {
+    font-size: 1.375rem;
+    padding: 40px;
+}
+.main__lead-label {
+    font-size: 1.1875rem;
+}
+.main__lead-input {
+    display: block;
+    outline: 0;
+    padding: 5px 10px;
+    width: 400px;
+    height: 28px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+.main__lead-btn {
+    font-size: 1.125rem;
+    padding: 10px 30px;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 200ms;
+    margin: 40px;
+}
+.main__lead-btn:hover {
+    transform: rotateZ(-5deg);
+    transition-duration: 200ms;
+}
+/* ============================= Footer ============================= */
+.fab {
+    color: white;
+    font-size: 1.5625rem;
+    text-decoration: none;
+    padding: 12px;
+    transition-duration: 300ms;
+}
+.fab:hover {
+    color: rgb(184, 184, 184);
+}
+
+/*========================= Media Queries ==========================*/
+@media(max-width: 992px) {
+    .navbar__logo {
+        width: 200x;
+        height: 55px;
+        margin-left: 20px;
+    }
+    .navbar__link:hover {
+        color: white;
+    }
+    .main__card-image:hover {
+        transform: none;
+    }
+    .main__card-btn:hover {
+        transform: none;
+        transition-duration: none;
+    }
+  
+}
+@media(max-width: 750px) {
+    /* Header */
+    .navbar__logo {
+        width: 200x;
+        height: 55px;
+        margin-left: 20px;
+    
+    }
+    #navbar__btnOpen {
+        display: block;
+        margin-right: 30px; 
+    }
+    #navbar__btnClose {
+        display: none;
+        margin-right: 30px;
+    }
+    /* Main */
+    .main__title {
+        font-size: 2.1875rem;
+    }
+    .main__subtitle {
+        font-size: 1.125rem;;
+    }
+    .main__card {
+        background-color: white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 1px 2px black;
+        margin: 60px 70px;
+    }
+    /* About */
+    .main__about-title {
+        font-size: 2.5rem;
+        padding:20px 40px;
+    }
+    .main__about-paragraph {
+        font-size: 20px;
+        padding: 5px 40px;
+        margin-bottom: 1.25rem;
+    }
+}
+@media(max-width: 576px) {
+    .main__card {
+        background-color: white;
+        display: inline-block;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 0 1px 2px black;
+        margin: 60px 70px;
+    }
+    .main__about-title {
+        font-size: 1.875rem;
+        padding:20px 40px;
+    }
+    .main__about-paragraph {
+        font-size: 1.125rem;
+        padding: 5px 40px;
+        margin-bottom: 20px;
+    }
+    .main__lead-input {
+        display: block;
+        outline: 0;
+        padding: 5px 10px;
+        width: 300px;
+        height: 28px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    .main__lead-btn:hover {
+        transform: none;
+        transition-duration: none;
+    }
+}
