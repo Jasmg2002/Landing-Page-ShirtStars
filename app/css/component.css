@@ -44,6 +44,7 @@
 }
 .main__subtitle {
     font-size: 1.25rem;
+    line-height: 28px;
 }
 .main__card {
     background-color: white;
@@ -56,8 +57,8 @@
 .main__card-image {
     max-height: 16.666666666666668vw;
     max-width: 16.666666666666668vw;
-    min-width: 220px;
-    min-height: 220px;
+    min-width: 170px;
+    min-height: 170px;
     display: block;
     padding: 30px;
     transition-duration: 200ms;
@@ -90,11 +91,13 @@
     font-size: 1.25rem;
     padding: 5px 70px;
     margin-bottom: 20px;
+    line-height: 28px;
 }
 /* Lead */
 .main__lead-title {
     font-size: 1.375rem;
-    padding: 40px;
+    padding: 30px 40px;
+    line-height: 28px;
 }
 .main__lead-label {
     font-size: 1.1875rem;
@@ -197,6 +200,21 @@
         padding: 5px 40px;
         margin-bottom: 1.25rem;
     }
+    .main__lead-input {
+        display: block;
+        outline: 0;
+        padding: 5px 10px;
+        width: 370px;
+        height: 28px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    .main__lead-btn:hover {
+        transform: none;
+        transition-duration: none;
+    }
 }
 @media(max-width: 576px) {
     .main__card {
@@ -205,7 +223,7 @@
         text-align: center;
         border-radius: 5px;
         box-shadow: 0 0 1px 2px black;
-        margin: 60px 70px;
+        margin: 30px 40px;
     }
     .main__about-title {
         font-size: 1.875rem;
@@ -220,12 +238,25 @@
         display: block;
         outline: 0;
         padding: 5px 10px;
-        width: 300px;
+        width: 58.1875vw;
         height: 28px;
         border-radius: 5px;
         border: 0;
         font-size: 1rem;
         margin-top: 15px;
+        
+    }
+    .main__lead-btn {
+        font-size: 1.125rem;
+        padding: 10px 30px;
+        background-color: black;
+        border: 0;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        transition-duration: 200ms;
+        margin: 40px;
+        
     }
     .main__lead-btn:hover {
         transform: none;
